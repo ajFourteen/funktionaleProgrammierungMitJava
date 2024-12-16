@@ -34,11 +34,11 @@ java {
     }
 }
 
-tasks.withType(JavaCompile) {
+tasks.withType(JavaCompile).configureEach {
     options.compilerArgs << "--enable-preview" // Enable preview features for compilation
 }
 
-tasks.withType(Test) {
+tasks.withType(Test).configureEach {
     jvmArgs '--enable-preview' // Enable preview features for running tests
 }
 
