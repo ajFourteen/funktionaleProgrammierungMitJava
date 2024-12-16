@@ -1,5 +1,5 @@
 package de.fourteen.funktionaleprogrammierunginjava.comparison;
 
-interface Console {
+public interface Console {
     void println(String output);
 }
