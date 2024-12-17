@@ -1,5 +1,6 @@
 package de.fourteen.funktionaleprogrammierunginjava.forms;
 
+@FunctionalInterface
 interface SomeFunctionalInterface {
     void doSomething();
 }
