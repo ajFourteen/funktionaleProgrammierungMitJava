@@ -1,4 +1,4 @@
-package de.fourteen.funktionaleprogrammierunginjava.comparison.functional;
+package de.fourteen.funktionaleprogrammierunginjava.areacalculation.functional;
 
 sealed interface Shape permits Rectangle, Square, Circle {
 }

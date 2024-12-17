@@ -1,6 +1,6 @@
-package de.fourteen.funktionaleprogrammierunginjava.comparison.procedural;
+package de.fourteen.funktionaleprogrammierunginjava.areacalculation.procedural;
 
-import de.fourteen.funktionaleprogrammierunginjava.comparison.AreaCalculation;
+import de.fourteen.funktionaleprogrammierunginjava.areacalculation.AreaCalculation;
 
 final class AreaCalculationProcedural implements AreaCalculation {
 

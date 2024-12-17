@@ -1,4 +1,4 @@
-package de.fourteen.funktionaleprogrammierunginjava.comparison;
+package de.fourteen.funktionaleprogrammierunginjava.areacalculation;
 
 import org.junit.jupiter.api.Test;
 

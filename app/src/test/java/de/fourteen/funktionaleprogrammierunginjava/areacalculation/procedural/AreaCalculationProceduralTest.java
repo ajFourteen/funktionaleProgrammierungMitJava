@@ -1,7 +1,7 @@
-package de.fourteen.funktionaleprogrammierunginjava.comparison.procedural;
+package de.fourteen.funktionaleprogrammierunginjava.areacalculation.procedural;
 
-import de.fourteen.funktionaleprogrammierunginjava.comparison.AreaCalculation;
-import de.fourteen.funktionaleprogrammierunginjava.comparison.AreaCalculationTest;
+import de.fourteen.funktionaleprogrammierunginjava.areacalculation.AreaCalculation;
+import de.fourteen.funktionaleprogrammierunginjava.areacalculation.AreaCalculationTest;
 import org.junit.jupiter.api.BeforeEach;
 
 final class AreaCalculationProceduralTest implements AreaCalculationTest {

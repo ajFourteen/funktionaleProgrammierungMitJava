@@ -1,4 +1,4 @@
-package de.fourteen.funktionaleprogrammierunginjava.comparison;
+package de.fourteen.funktionaleprogrammierunginjava.areacalculation;
 
 @FunctionalInterface
 public interface AreaCalculation {
