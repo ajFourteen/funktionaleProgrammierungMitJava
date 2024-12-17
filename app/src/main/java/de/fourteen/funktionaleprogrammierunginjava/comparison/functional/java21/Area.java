@@ -10,7 +10,7 @@ interface Area {
 
     Function<Circle, Double> areaOfCircle = circle -> circle.radius() * circle.radius() * Math.PI;
 
-    Function<Shape, Double> area = (shape) -> switch (shape) {
+    Function<Shape, Double> area = shape -> switch (shape) {
         case Rectangle rectangle -> areaOfRectangle.apply(rectangle);
         case Square square -> areaOfSquare.apply(square);
         case Circle circle -> areaOfCircle.apply(circle);

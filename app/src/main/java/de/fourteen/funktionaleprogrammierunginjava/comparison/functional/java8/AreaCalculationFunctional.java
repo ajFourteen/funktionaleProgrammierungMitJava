@@ -10,5 +10,15 @@ import static de.fourteen.funktionaleprogrammierunginjava.comparison.functional.
 import static de.fourteen.funktionaleprogrammierunginjava.comparison.functional.java8.Parameters.parameters;
 
 interface AreaCalculationFunctional {
-    Function<Consumer<String>, AreaCalculation> areaCalculationFunctional = (Consumer<String> println) -> (String[] input) -> println.accept(output.apply(area.apply(input[0], parameters.apply(input))));
+    Function<Consumer<String>, AreaCalculation> areaCalculationFunctional =
+            (Consumer<String> println) ->
+                    (String[] input) ->
+                            println.accept(
+                                    output.apply(
+                                            area.apply(
+                                                    input[0],
+                                                    parameters.apply(input)
+                                            )
+                                    )
+                            );
 }

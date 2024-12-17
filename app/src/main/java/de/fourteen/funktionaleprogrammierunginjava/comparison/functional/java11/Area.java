@@ -12,7 +12,7 @@ interface Area {
 
     Function<Double, Double> areaOfCircle = (Double radius) -> radius * radius * Math.PI;
 
-    BiFunction<String, List<Double>, Double> area = (String shape, List<Double> params) -> {
+    BiFunction<String, List<Double>, Double> area = (shape, params) -> {
         switch (shape) {
             case "rectangle":
                 return areaOfRectangle.apply(params.get(0), params.get(1));
