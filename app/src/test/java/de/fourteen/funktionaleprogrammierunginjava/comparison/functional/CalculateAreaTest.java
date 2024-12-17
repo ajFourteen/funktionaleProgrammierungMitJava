@@ -1,16 +1,18 @@
-package de.fourteen.funktionaleprogrammierunginjava.comparison.procedural;
+package de.fourteen.funktionaleprogrammierunginjava.comparison.functional;
 
 import de.fourteen.funktionaleprogrammierunginjava.comparison.AreaCalculation;
 import de.fourteen.funktionaleprogrammierunginjava.comparison.AreaCalculationTest;
 import org.junit.jupiter.api.BeforeEach;
 
-final class AreaCalculationProceduralTest implements AreaCalculationTest {
+import static de.fourteen.funktionaleprogrammierunginjava.comparison.functional.CalculateArea.calculateArea;
 
-    private AreaCalculationProcedural sut;
+final class CalculateAreaTest implements AreaCalculationTest {
+
+    private CalculateArea sut;
 
     @BeforeEach
     void setUp() {
-        sut = new AreaCalculationProcedural();
+        sut = calculateArea;
     }
 
     @Override

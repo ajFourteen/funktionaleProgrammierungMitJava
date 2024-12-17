@@ -13,5 +13,5 @@ public interface AreaCalculation {
      *
      * @param input [shape, params...]
      */
-    void printCalculatedArea(String[] input);
+    double calculateArea(String[] input);
 }
