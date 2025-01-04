@@ -1,22 +1,19 @@
 package de.fourteen.funktionaleprogrammierunginjava.areacalculation.procedural;
 
-import de.fourteen.funktionaleprogrammierunginjava.areacalculation.AreaCalculation;
+final class AreaCalculationProcedural {
 
-final class AreaCalculationProcedural implements AreaCalculation {
-
-    @Override
-    public double calculateArea(final String[] input) {
-        switch (input[0]) {
+    double calculateArea(final String shapeName, final Double[] sizeConfiguration) {
+        switch (shapeName) {
             case "rectangle":
-                double width = Double.parseDouble(input[1]);
-                double height = Double.parseDouble(input[2]);
+                double width = sizeConfiguration[0];
+                double height = sizeConfiguration[1];
                 return width * height;
             case "square":
-                double length = Double.parseDouble(input[1]);
+                double length = sizeConfiguration[0];
                 return length * length;
             case "circle":
-                double radius = Double.parseDouble(input[1]);
-                return radius * radius * Math.PI;
+                double radius = sizeConfiguration[0];
+                return Math.PI * radius * radius;
             default:
                 throw new IllegalArgumentException("no such shape");
         }

@@ -2,35 +2,40 @@ package de.fourteen.funktionaleprogrammierunginjava.areacalculation;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.function.BiFunction;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 public interface AreaCalculationTest {
 
-    AreaCalculation sut();
+    BiFunction<String, Double[], Double> sut();
 
     @Test
     default void rectangle() {
-        String[] input = new String[]{"rectangle", "3", "4"};
+        String shapeName = "rectangle";
+        Double[] sizeConfiguration = {3.0, 4.0};
 
-        double actualArea = sut().calculateArea(input);
+        double actualArea = sut().apply(shapeName, sizeConfiguration);
 
         assertThat(actualArea).isEqualTo(12);
     }
 
     @Test
     default void square() {
-        String[] input = new String[]{"square", "2"};
+        String shapeName = "square";
+        Double[] sizeConfiguration = {2.0};
 
-        double actualArea = sut().calculateArea(input);
+        double actualArea = sut().apply(shapeName, sizeConfiguration);
 
         assertThat(actualArea).isEqualTo(4);
     }
 
     @Test
     default void circle() {
-        String[] input = new String[]{"circle", "2"};
+        String shapeName = "circle";
+        Double[] sizeConfiguration = {2.0};
 
-        double actualArea = sut().calculateArea(input);
+        double actualArea = sut().apply(shapeName, sizeConfiguration);
 
         assertThat(actualArea).isEqualTo(12.566370614359172);
     }
