@@ -1,16 +1,21 @@
-package de.fourteen.funktionaleprogrammierunginjava.customersandorders.objectoriented;
+package de.fourteen.funktionaleprogrammierunginjava.customersandorders.procedural;
 
 import java.util.Objects;
 
-final class Customer {
-    private final CustomerId id;
+import static de.fourteen.funktionaleprogrammierunginjava.customersandorders.SlowDown.slowDown;
 
-    Customer(final CustomerId id) {
+final class Customer {
+    private final int id;
+    private int numberOfOrders;
+
+    Customer(final int id, final int numberOfOrders) {
         this.id = id;
+        this.numberOfOrders = numberOfOrders;
     }
 
-    CustomerId id() {
-        return id;
+    int numberOfOrders() {
+        slowDown();
+        return numberOfOrders;
     }
 
     @Override
